@@ -59,7 +59,7 @@ Bu proje, STM32F103C8T6 mikrodenetleyicisi kullanarak aynı SPI hattı üzerinde
 ```
 
 ### Gerçek Devre Görünümü
-![Devre Görünümü](images/circuit_photo.jpg)
+![Devre Görünümü](images/1.jpg)
 
 ### SPI Bağlantıları
 - MOSI: PB15
@@ -75,9 +75,12 @@ Bu proje, STM32F103C8T6 mikrodenetleyicisi kullanarak aynı SPI hattı üzerinde
 ## Yazılım Özellikleri
 
 ### STM32CubeIDE Konfigürasyonu
-![SPI Konfigürasyonu](images/spi_config.png)
-![GPIO Konfigürasyonu](images/gpio_config.png)
-![FATFS Konfigürasyonu](images/fatfs_config.png)
+![SPI Konfigürasyonu](images/2.jpg)
+![GPIO Konfigürasyonu](images/3.jpg)
+![FATFS Konfigürasyonu](images/4.jpg)
+![Ek Konfigürasyonlar](images/5.jpg)
+![Devre Detayları](images/6.jpg)
+![Sistem Ayarları](images/7.png)
 
 Proje, aşağıdaki temel özellikleri içermektedir:
 
@@ -158,3 +161,13 @@ Bu proje, STM32F103C8T6 mikrodenetleyicisi kullanarak tek bir SPI hattı üzerin
 ---
 
 *Not: Bu proje STM32F103C8T6 mikrodenetleyicisi üzerinde test edilmiştir. Farklı mikrodenetleyicilerde kullanım için gerekli değişiklikler yapılmalıdır.* 
+
+## Proje Görselleri
+
+![Resim 1](images/1.jpg)
+![Resim 2](images/2.jpg)
+![Resim 3](images/3.jpg)
+![Resim 4](images/4.jpg)
+![Resim 5](images/5.jpg)
+![Resim 6](images/6.jpg)
+![Resim 7](images/7.png) 

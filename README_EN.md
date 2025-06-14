@@ -14,7 +14,7 @@ This project aims to manage two different SD cards through the same SPI bus usin
 
 ## Circuit Connections
 
-### Circuit Schematic
+### Circuit Diagram
 ```
 +------------------+          +------------------+
 |                  |          |                  |
@@ -155,4 +155,14 @@ This project demonstrates that it is possible to manage two different SD cards t
 
 ---
 
-*Note: This project has been tested on the STM32F103C8T6 microcontroller. Necessary modifications should be made for use with different microcontrollers.* 
+*Note: This project has been tested on the STM32F103C8T6 microcontroller. Necessary modifications should be made for use with different microcontrollers.*
+
+## Project Images
+
+![Image 1](images/1.jpg)
+![Image 2](images/2.jpg)
+![Image 3](images/3.jpg)
+![Image 4](images/4.jpg)
+![Image 5](images/5.jpg)
+![Image 6](images/6.jpg)
+![Image 7](images/7.png) 
