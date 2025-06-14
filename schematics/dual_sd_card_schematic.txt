@@ -1,0 +1,61 @@
+STM32F103C8T6 Dual SD Card Interface Schematic
+============================================
+
++------------------+          +------------------+
+|                  |          |                  |
+|   STM32F103C8T6  |          |    SD Card 1     |
+|                  |          |                  |
+|  PB15 (MOSI) ----+--------->+ MOSI            |
+|                  |          |                  |
+|  PB14 (MISO) <---+----------+ MISO            |
+|                  |          |                  |
+|  PB13 (SCK)  ----+--------->+ SCK             |
+|                  |          |                  |
+|  PB12 (CS1)  ----+--------->+ CS              |
+|                  |          |                  |
+|  PB2  (CS2)  ----+--------->+ CS              |
+|                  |          |                  |
+|  3.3V        ----+--------->+ VCC             |
+|                  |          |                  |
+|  GND         ----+--------->+ GND             |
+|                  |          |                  |
++------------------+          +------------------+
+                                     |
+                                     |
+                            +------------------+
+                            |                  |
+                            |    SD Card 2     |
+                            |                  |
+                            | MOSI            |
+                            |                  |
+                            | MISO            |
+                            |                  |
+                            | SCK             |
+                            |                  |
+                            | CS              |
+                            |                  |
+                            | VCC             |
+                            |                  |
+                            | GND             |
+                            |                  |
+                            +------------------+
+
+Bağlantı Detayları:
+------------------
+1. SPI Bağlantıları:
+   - MOSI: PB15 -> Her iki SD kartın MOSI pinine
+   - MISO: PB14 <- Her iki SD kartın MISO pininden
+   - SCK:  PB13 -> Her iki SD kartın SCK pinine
+   - CS1:  PB12 -> SD Card 1'in CS pinine
+   - CS2:  PB2  -> SD Card 2'nin CS pinine
+
+2. Güç Bağlantıları:
+   - 3.3V -> Her iki SD kartın VCC pinine
+   - GND  -> Her iki SD kartın GND pinine
+
+Önemli Notlar:
+-------------
+1. Her iki SD kart modülü de aynı SPI hattını paylaşır
+2. CS pinleri farklı GPIO pinlerinden kontrol edilir
+3. Tüm SD kart modülleri 3.3V ile çalışır
+4. SPI hattı üzerinden iletişim kurarken CS pinlerinin doğru yönetilmesi önemlidir 
