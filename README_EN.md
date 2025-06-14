@@ -57,7 +57,6 @@ This project aims to manage two different SD cards through the same SPI bus usin
 ```
 
 ### Real Circuit View
-![Circuit View](images/circuit_photo.jpg)
 
 ### SPI Connections
 - MOSI: PB15
@@ -73,9 +72,6 @@ This project aims to manage two different SD cards through the same SPI bus usin
 ## Software Features
 
 ### STM32CubeIDE Configuration
-![SPI Configuration](images/spi_config.png)
-![GPIO Configuration](images/gpio_config.png)
-![FATFS Configuration](images/fatfs_config.png)
 
 The project includes the following basic features:
 
